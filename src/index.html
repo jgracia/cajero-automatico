@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <style>
+      /*.logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }*/
+
+      body {
+        
+        min-height: 100vh;
+        min-width:  100vw;
+        padding: 0;
+        background-image: url( '/assets/CajeroNew.jpg' );
+        background-size:  cover;
+        background-position: center;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    
+    <header>
+      <div>
+        <img src="/assets/logo-uees.png" class="logo tauri" alt="Tauri logo" />
+      </div>
+      <div>
+        <h1>Grupo 2: Cajero Automático</h1>
+        <h2>Lenguajes de Programación</h2>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar-left"></aside>
+      <main class="main-content">
+
+        <section class="titulo">
+          <p>Bienvenido al ATM UEES, Seleccione por favor una opción</p>
+        </section>
+        
+        <div class="contenido">
+          <section class="botones">
+            <button class="favorite styled" type="button" id="btnConsulta">Consulta</button>
+            <button class="favorite styled" type="button" id="btnDeposito">Depósito</button>
+            <button class="favorite styled" type="button" id="btnRetiro">Retiro</button>
+            <button class="favorite styled" type="button" id="btnCancelar">Cancelar</button>
+          </section>
+
+          <section class="formulario">
+            <p id="msg"></p>
+            <div id="entradas">
+              <img src="/assets/pngegg.png" width="350" height="230" />
+            </div>
+          </section>
+        </div>
+
+      </main>
+      <aside class="sidebar-right"></aside>
+    </div>
+
+    <script src="./codigo.js"></script>
+  </body>
+</html>
